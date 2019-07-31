@@ -38,6 +38,7 @@ describe 'Patient' do
       appointment_2 = Appointment.new(steve, doctor_smith, 'Saturday, January 33rd')
       appointment_3 = Appointment.new(mike, doctor_who, "Sunday, January 34th")
 
+
       expect(steve.appointments).to include(appointment)
       expect(steve.appointments).to include(appointment_2)
       expect(steve.appointments).to_not include(appointment_3)
